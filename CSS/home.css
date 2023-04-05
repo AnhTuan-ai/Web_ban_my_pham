@@ -1,0 +1,18 @@
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #434679;
+}
+.nav1__left{
+    display: flex;
+}
+i{
+    padding: 10px 30px;
+}
+.nav1__right{
+    display: flex;
+}
+label{
+    padding: 15px;
+    color: #e5e0ca;
+}
