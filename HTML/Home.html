@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- nav__1 -->
     <nav class="nav1">
         <div class="nav1__left">
             <i class='fab fa-facebook-square' style='font-size:36px; color: #e5e0ca;'></i>
@@ -20,16 +21,36 @@
         </div>
         <div class="nav1__right">
             <i class='fas fa-eye' style='font-size:36px; color: #e5e0ca;'></i> 
-            <label for="">Theo dõi đơn hàng</label>
+            <label class="nav1__right-label" for="">Theo dõi đơn hàng</label>
         </div>
     </nav>
+    <!-- header -->
     <header class="header">
-        <div class="header__left">
+        <div class="grid-header item1">
+            <img src="/IMG/logo.jpg" alt="logo" width="100%" height="140px" >
         </div>
-        <div class="header__right">
-            <div class="h_right__top"></div>
-            <div class="h_right__bottom"></div>
+        <div class="grid-header item2">
+            <form class="header__form-1"  action="">
+                <input class="h__form1-input" type="search" placeholder="Tìm kiếm... ">
+                <button class="h__form1-button"><i class='fas fa-search' style='font-size:24px'></i></button>
+            </form>
+            <form class="header__form-2" action="">
+                <label for="">Đăng kí</label>
+                <label for="">Đăng nhập</label>
+                <a href=""><i class='fas fa-shopping-cart' style='font-size:24px; color:black' ></i></a>
+            </form>
+        </div>
+        <div class="grid-header item3">
+            <ul class="h__item3-ul">
+                <li class="h_item3__li">Trang Chủ</li>
+                <li class="h_item3__li dropdown">Sản Phẩm
+                </li>
+                <li class="h_item3__li">Hàng mới về</li>
+                <li class="h_item3__li">Thương hiệu</li>
+                <li class="h_item3__li">Liên Hệ</li>
+            </ul>
         </div>
     </header>
+    <!-- intro -->
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* css cho phần nav1: */
 .nav1{
     display: flex;
     justify-content: space-between;
@@ -9,10 +10,73 @@
 i{
     padding: 10px 30px;
 }
+i:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
 .nav1__right{
     display: flex;
 }
-label{
-    padding: 15px;
+.nav1__right-label{
+    padding: 15px 30px 0px 0px;
     color: #e5e0ca;
 }
+/* css cho phần header */
+
+.header{
+    background-color:var(--yellow-color);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: 70px 70px;
+}
+.item1{
+    grid-row: span 2;
+}
+.item2{
+    text-align: center;
+    grid-column: span 6;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.item3{
+    text-align: center;
+    grid-column: span 6;
+}
+.header__form-1{
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.h__form1-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    border-radius: 50px 0px 0px 50px;
+    padding: 0 10px;
+}
+.h__form1-button{
+    border: none;
+    outline: none;
+    border-radius: 0px 50px 50px 0px;
+}
+.header__form-2{
+    height: 40px;
+}
+.h__item3-ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.h_item3__li{
+    list-style-type: none;
+}
+.h_item3__li:hover{
+    opacity: 0.7;
+}
+
+
