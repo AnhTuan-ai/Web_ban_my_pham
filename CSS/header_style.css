@@ -81,13 +81,17 @@ header:hover {
   -moz-animation: AnimationName 5s ease infinite;
 }
 
-a {
+a{
   text-decoration: none;
   font-size: 30px;
   color: rgb(255, 255, 255);
 }
-
-.h1 {
+.header__form-2 label:hover,
+a:hover {
+  text-shadow: 1px 1px 1px black, 0px 1px 4px rgb(218, 245, 179);
+  color: #67c77ec6;
+}
+.nav {
   display: flex;
   width: 80%;
   justify-content: left;
@@ -118,7 +122,10 @@ a {
   transform: translate3d(-50%, -50%, 0);
   z-index: -1;
 }
-
+.slogan h1{
+  
+  font-size: 1em;
+}
 #Container {
   width: 1400px;
   /* Auto layout */
@@ -175,12 +182,11 @@ a {
   height: 100%;
   border: none;
   outline: none;
-  font-size: 1.4rem;
+  font-size: 20px;
   border-radius: 50px 0px 0px 50px;
   padding: 0 10px;
   color: #02280b;
 }
-
 .h__form1-input:hover::placeholder {
   color: #38b355c6;
 }
@@ -212,11 +218,7 @@ a {
   color: #02280b;
 }
 
-.header__form-2 label:hover,
-a:hover {
-  text-shadow: 1px 1px 1px black, 0px 1px 4px rgb(218, 245, 179);
-  color: #67c77ec6;
-}
+
 
 .h__item3-ul {
   display: flex;
@@ -255,14 +257,14 @@ a:hover {
   display: flex;
 }
 .h_item3__li_dropdown_menu {
-  display: none;
+  display: none; 
   flex-direction: column;
-  padding: 10px;
+  padding: 20px;
   position: absolute;
-  width: 110px;
-  height: 240px;
+  width: 120px;
+  height: 270px;
   top: 50px;
-  right: 200px;
+  right: 220px;
   background-color: #e5e0caf8;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 0px 20px;
@@ -275,39 +277,37 @@ a:hover {
 .h_item3__li_dropdown_menu a {
   color: #1d3b24;
 }
-.submenu {
+.dropdown_submenu {
   display: none;
   position: absolute;
   text-align: left;
   flex-direction: row;
   justify-content: baseline;
   width: 600px;
-  height: 240px;
+  height: 270px;
   top: 0px;
-  left: 125px;
-  padding: 10px;
+  left: 121px;
+  padding: 5px;
   padding-left: 20px;
   border-left: 2px solid rgba(0, 0, 0, 0.242);
-  background-color: #e5e0ca;
+  background: #e5e0ca;
   border-radius: 0px 0px 20px 0px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
 }
-.submenu a {
+.dropdown_submenu a {
   color: #1d3b24;
   font-size: 20px;
   text-align: left;
   width: fit-content;
 }
-.submenu h3 {
-  padding: 5px;
+.dropdown_submenu h4 {
+  line-height: 13px;
+  font-weight: bold;
 }
-.submenu li {
+.dropdown_submenu li {
   list-style-type: georgian;
-  padding: 1px;
+  padding: 0.3px;
 }
-.h_item3__li_dropdown_menu li:hover > div.submenu {
+.h_item3__li_dropdown_menu li:hover > div.dropdown_submenu {
   display: flex;
 }
