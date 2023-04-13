@@ -126,13 +126,7 @@ a:hover {
   
   font-size: 1em;
 }
-#Container {
-  width: 1400px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(250, 235, 215, 0.8);
-}
+
 
 #logo {
   width: 294px;
