@@ -27,7 +27,7 @@ i:hover{
     background-color:var(--yellow-color);
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: 70px 70px;
+    grid-template-rows: 60px 60px;
 }
 .item1{
     grid-row: span 2;
