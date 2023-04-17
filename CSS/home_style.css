@@ -10,63 +10,6 @@
   flex-direction: column;
   background-color: rgba(250, 235, 215, 0.8);
 }
-.product_tag {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  gap: 5px;
-  position: relative;
-  width: 250px;
-  height: 438px;
-  left: 0px;
-  top: 0px;
-
-  background: #4f5397;
-  border-radius: 20px;
-}
-.product_img {
-  width: 230px;
-  height: 269px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 20px;
-}
-.product_tag_New {
-  position: absolute;
-  height: 34px;
-  left: 70.46%;
-  right: -3.15%;
-  top: calc(50% - 34px / 2 - 155px);
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  background: #ff0000;
-}
-.product_name{
-        font-family: 'Inter';
-        font-style: italic;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.01em;
-        color: #F5EEC2;
-
-}
-.product_brand{
-        width: 230px;
-        height: 24px;font-family: 'Inter';font-style: italic;font-weight: 700;font-size: 25px;line-height: 24px;letter-spacing: 0.01em;color: #72A24E;text-align: left; margin: 0px;}
-.product_price{
-        width: 230px;
-font-family: 'JejuGothic';
-font-weight: 400;
-font-size: 35px;
-line-height: 38px;
-text-align: right;
-letter-spacing: 0.01em;
-color: #B8F900;
-
-}
 .MultiCarousel { float: left; overflow: hidden; padding:0px 30px; width: 100%; position:relative; }
     .MultiCarousel .MultiCarousel-inner {width: 120%;display:flex;transition: 1s ease all;flex-wrap: nowrap;align-content: center;justify-content: flex-start;}
         .MultiCarousel .MultiCarousel-inner .item { float: left;width: 250px;margin:10px;}
@@ -75,3 +18,122 @@ color: #B8F900;
     .MultiCarousel .leftLst { left: 0px; }
     .MultiCarousel .rightLst { right:0px; }
     .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; }
+    
+  .Banner_Sale{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .Banner_Sale img{
+width: 650px;
+height: 300px;
+border-radius: 20px;
+border: solid 5px rgba(0, 0, 0, 0.163);
+box-shadow: 2px 2px 4px black;
+  }
+
+figure.snip1084 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  width: 650px;
+  height: 300px;  
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.86);
+}
+
+figure.snip1084 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+figure.snip1084 img {
+  opacity: 1;
+  width: 650px;
+  height: 300px;  
+}
+
+figure.snip1084 a {
+  top: 50%;
+  left: 40px;
+  right: 40px;
+  position: absolute;
+  display:none;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+figure.snip1084:hover a{
+  display: block;
+  z-index: 1;
+}
+figure.snip1084:before,
+figure.snip1084:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+  transition: opacity 0.6s, -webkit-transform 0.6s, -moz-transform 0.6s, -o-transform 0.6s, transform 0.6s;
+}
+
+figure.snip1084:before {
+  border-top: 2px double #fff;
+  border-bottom: 2px double #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+figure.snip1084:after {
+  border-right: 2px double #fff;
+  border-left: 2px double #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+
+
+figure.snip1084:hover img{
+  opacity: 0.3;
+  -webkit-filter: blur(5px);
+  filter: blur(0.5px);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.snip1084:hover:before,
+figure.snip1084:hover:after{
+  opacity: 0.9;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.Home_goiyPD{
+  width: 100%;
+  display: flex;
+}
+.danhmuc{
+  width: 20%;
+  background: hsla(0, 0%, 0%, 0.6);
+}
+.goiyPD{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  text-align: center;
+  margin: 0px 0px auto;
+  justify-content: flex-start;
+}
+.goiy_product_list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.goiy_product_list>.product_tag{
+  margin-bottom: 10px;
+}

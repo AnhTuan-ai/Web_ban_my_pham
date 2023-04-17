@@ -64,10 +64,10 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     152deg,
-    rgba(27, 25, 61, 0.8) 1%,
-    rgba(3, 53, 22, 0.7) 10%,
+    rgba(27, 25, 61, 0.95) 1%,
+    rgba(8, 43, 21, 0.85) 10%,
     rgba(6, 9, 64, 1) 43%,
-    rgba(229, 225, 200, 0.57) 85%
+    rgba(229, 225, 200, 0.8)
   );
   position: -webkit-sticky;
   position: sticky;
@@ -81,7 +81,7 @@ header:hover {
   -moz-animation: AnimationName 5s ease infinite;
 }
 
-a{
+a {
   text-decoration: none;
   font-size: 30px;
   color: rgb(255, 255, 255);
@@ -122,11 +122,9 @@ a:hover {
   transform: translate3d(-50%, -50%, 0);
   z-index: -1;
 }
-.slogan h1{
-  
+.slogan h1 {
   font-size: 1em;
 }
-
 
 #logo {
   width: 294px;
@@ -212,8 +210,6 @@ a:hover {
   color: #02280b;
 }
 
-
-
 .h__item3-ul {
   display: flex;
   justify-content: space-between;
@@ -229,8 +225,8 @@ a:hover {
 }
 
 .header1 {
-  background-color: rgb(229, 224, 202, 0.95);
-  width: 1400px;
+  background-color: rgb(229, 224, 202, 0.98);
+  width: 100%;
   height: 120px;
   display: grid;
   grid-template-columns: 20px auto auto auto auto auto auto 20px;
@@ -251,7 +247,7 @@ a:hover {
   display: flex;
 }
 .h_item3__li_dropdown_menu {
-  display: none; 
+  display: none;
   flex-direction: column;
   padding: 20px;
   position: absolute;
@@ -304,4 +300,114 @@ a:hover {
 }
 .h_item3__li_dropdown_menu li:hover > div.dropdown_submenu {
   display: flex;
+}
+
+.product_tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  position: relative;
+  width: 250px;
+  height: 438px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(70deg, #0d5e3a, #151b51);
+  background-size: 200% 200%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+  border-radius: 20px;
+}
+.product_img {
+  position: relative;
+  width: 230px;
+  height: 265px;
+  border-radius: 20px;
+}
+.product_img > img {
+  width: 230px;
+  height: 265px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+.product_tag_icon {
+  display: none;
+  justify-content: space-evenly;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  border-radius: 20px;
+  z-index: 1;
+}
+.product_tag_icon button {
+  align-self: center;
+  font-size: 80px;
+  background: none;
+  border: none;
+  color: aliceblue;
+}
+.product_tag_icon button:hover {
+  color: rgb(252, 235, 173);
+}
+.product_tag_New {
+  position: absolute;
+  height: 34px;
+  left: 70.46%;
+  right: -3.15%;
+  top: calc(50% - 34px / 2 - 155px);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  background: #ff0000;
+}
+.product_name {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #f5eec2;
+}
+.product_brand {
+  width: 230px;
+  height: 24px;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #72a24e;
+  text-align: left;
+  margin: 0px;
+}
+.product_price {
+  width: 230px;
+  font-family: "JejuGothic";
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 35px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #b8f900;
+  margin: 0px;
+}
+
+.product_tag:hover {
+  background: rgb(10, 10, 10);
+}
+.product_tag:hover .product_tag_icon {
+  display: flex;
+}
+.product_tag:hover .product_tag_New {
+  display: none;
+}
+h2 > a:hover {
+  text-decoration: none;
 }
