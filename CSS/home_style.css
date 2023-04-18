@@ -117,8 +117,8 @@ figure.snip1084:hover:after{
   width: 100%;
   display: flex;
 }
-.danhmuc{
-  width: 20%;
+.home_danhmuc{
+  width: 25%;
   background: hsla(0, 0%, 0%, 0.6);
 }
 .goiyPD{
@@ -137,3 +137,17 @@ figure.snip1084:hover:after{
 .goiy_product_list>.product_tag{
   margin-bottom: 10px;
 }
+.danhmuc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top:20px;
+}
+.danhmuc ul{
+  width: 47%;
+  font-size: 15px;
+  list-style-type: none;}
+  .danhmuc a{
+    width: fit-content;
+  }
