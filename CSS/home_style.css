@@ -151,3 +151,13 @@ figure.snip1084:hover:after{
   .danhmuc a{
     width: fit-content;
   }
+  .brand_img{
+    width: 250px;
+  height: 150px;  object-fit: contain;
+  background-color: #fff;
+  }
+  .brand_name .item{
+    width: fit-content;
+  }
+  .brand_name .leftLst, .brand_name .rightLst { position:absolute;
+    top:calc(50% - 10px); }
