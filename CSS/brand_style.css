@@ -1,0 +1,14 @@
+.brand_img{
+        width: 250px;
+      height: 150px;  object-fit: contain;
+      background-color: #fff;
+      
+      }
+.brand .item{
+        width: fit-content;
+        margin-bottom: 10px;
+}
+.brand{ display: flex;
+flex-wrap: wrap;
+justify-content:space-around;
+width: 80%;}
