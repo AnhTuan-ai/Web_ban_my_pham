@@ -299,7 +299,32 @@ a:hover {
 .h_item3__li_dropdown_menu li:hover > div.dropdown_submenu {
   display: flex;
 }
+#Container {
+  width: 1400px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 235, 215, 0.8);
+}
 
+.home_danhmuc{
+  width: 25%;
+  background: hsla(0, 0%, 0%, 0.6);
+}
+.danhmuc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top:20px;
+}
+.danhmuc ul{
+  width: 48%;
+  font-size: 15px;
+  list-style-type: none;}
+  .danhmuc a{
+    width: fit-content;
+  }
 .product_tag {
   display: flex;
   flex-direction: column;

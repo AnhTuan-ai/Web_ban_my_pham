@@ -1,0 +1,20 @@
+.Product {
+  width: 100%;
+  display: flex;
+}
+.All_pd {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  text-align: center;
+  margin: 0px 0px auto;
+  justify-content: flex-start;
+}
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.product_list > .product_tag {
+  margin-bottom: 10px;
+}

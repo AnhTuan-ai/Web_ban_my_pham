@@ -3,13 +3,7 @@
   height: 500px;
   width: 1000px;
 }
-#Container {
-  width: 1400px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(250, 235, 215, 0.8);
-}
+
 .MultiCarousel { float: left; overflow: hidden; padding:0px 30px; width: 100%; position:relative; }
     .MultiCarousel .MultiCarousel-inner {width: 120%;display:flex;transition: 1s ease all;flex-wrap: nowrap;align-content: center;justify-content: flex-start;}
         .MultiCarousel .MultiCarousel-inner .item { float: left;width: 250px;margin:10px;}
@@ -117,10 +111,6 @@ figure.snip1084:hover:after{
   width: 100%;
   display: flex;
 }
-.home_danhmuc{
-  width: 25%;
-  background: hsla(0, 0%, 0%, 0.6);
-}
 .goiyPD{
   display: flex;
   flex-direction: column;
@@ -137,20 +127,6 @@ figure.snip1084:hover:after{
 .goiy_product_list>.product_tag{
   margin-bottom: 10px;
 }
-.danhmuc{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  padding-top:20px;
-}
-.danhmuc ul{
-  width: 48%;
-  font-size: 15px;
-  list-style-type: none;}
-  .danhmuc a{
-    width: fit-content;
-  }
   .brand_img{
     width: 250px;
   height: 150px;  object-fit: contain;
