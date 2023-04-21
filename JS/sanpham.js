@@ -47,7 +47,7 @@ var arrSP =[
         loai: 'dactri',
         loaichitiet: 'chongnang'
     },
-{
+    {
         TenSP: 'Kem chống nắng The Ordinary Mineral UV Filters SPF 30 with Antioxidants',
         hinh: '../IMG/The-Ordinary-Mineral-UV-Filters-SPF-30-with-Antioxidants-768x768.jpg',
         thuonghieu: 'ordinary',
@@ -56,14 +56,65 @@ var arrSP =[
         loai: 'dactri',
         loaichitiet: 'chongnang'
     },
-
+    {
+        TenSP: 'Kem chống nắng The Ordinary Mineral UV Filters SPF 30 with Antioxidants',
+        hinh: '../IMG/The-Ordinary-Mineral-UV-Filters-SPF-30-with-Antioxidants-768x768.jpg',
+        thuonghieu: 'ordinary',
+        gia: '370.000',
+        m_s_k: 'm',
+        loai: 'dactri',
+        loaichitiet: 'chongnang'
+    },
+    {
+        TenSP: 'Kem chống nắng The Ordinary Mineral UV Filters SPF 30 with Antioxidants',
+        hinh: '../IMG/The-Ordinary-Mineral-UV-Filters-SPF-30-with-Antioxidants-768x768.jpg',
+        thuonghieu: 'ordinary',
+        gia: '370.000',
+        m_s_k: 'm',
+        loai: 'dactri',
+        loaichitiet: 'chongnang'
+    },
+    {
+        TenSP: 'Kem chống nắng The Ordinary Mineral UV Filters SPF 30 with Antioxidants',
+        hinh: '../IMG/The-Ordinary-Mineral-UV-Filters-SPF-30-with-Antioxidants-768x768.jpg',
+        thuonghieu: 'ordinary',
+        gia: '370.000',
+        m_s_k: 'm',
+        loai: 'dactri',
+        loaichitiet: 'chongnang'
+    },
+    {
+        TenSP: 'Kem chống nắng The Ordinary Mineral UV Filters SPF 30 with Antioxidants',
+        hinh: '../IMG/The-Ordinary-Mineral-UV-Filters-SPF-30-with-Antioxidants-768x768.jpg',
+        thuonghieu: 'ordinary',
+        gia: '370.000',
+        m_s_k: 'm',
+        loai: 'dactri',
+        loaichitiet: 'chongnang'
+    },
+    {
+        TenSP: 'Kem dưỡng ban đêm trị nám Transino Whitening Repair Cream EX 35g',
+        hinh: '../IMG/Transino-Whitening-Repair-Cream-ex.jpg',
+        thuonghieu: 'Transino',
+        gia: '749.000',
+        m_s_k: 's',
+        loai: 'duong',
+        loaichitiet: 'kemduong'
+    },
 
 ]
+
+var perPage = 6;
+var currentPage = 1;
+var start = 0;
+var end = perPage;
+const totalPage = Math.ceil(arrSP.length / perPage);
 
 function hienSP(arrSP){
     var list = document.getElementById('list');
     list.innerHTML = '';
     for( i = 0; i < arrSP.length; i++){
+        if(i >= start && i<end) {
         m_s_kSP = arrSP[i].m_s_k;
         loaiSP = arrSP[i].loai;
         loaichitietSP = arrSP[i].loaichitiet;
@@ -97,6 +148,35 @@ function hienSP(arrSP){
         </div>
         `
     }
+    }
+}
+
+// ham page:
+var arr = []
+function page (arr){
+    var btnNext = document.getElementById("next")
+    var btnPrevious = document.getElementById("Previous")
+    btnNext.addEventListener('click', () =>{
+        currentPage++;
+        if (currentPage > totalPage){
+            currentPage = totalPage;
+        }
+        start = (currentPage - 1)*perPage;
+        end = currentPage*perPage;
+        hienSP(arr);
+    }
+    )
+    var btnPrevious = document.getElementById("Previous")
+    btnPrevious.addEventListener('click', () =>{
+        currentPage--;
+        if (currentPage > totalPage){
+            currentPage = totalPage;
+        }
+        start = (currentPage - 1)*perPage;
+        end = currentPage*perPage;
+        hienSP(arr);
+    }
+    )
 }
 
 document.getElementById("m").addEventListener("click", chonSPmk);
@@ -111,7 +191,8 @@ function chonSPsk(){
     hienSP(newArray);
 }
 hienSP(arrSP);
-// page:
+page (arrSP)
+// function renderListPage(){
 
-
+// }
 
