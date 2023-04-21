@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;1,400;1,500;1,600&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Itim&display=swap');
+
 
 * {
   padding: 0;
   margin: 0 auto;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Itim', cursive;
 }
 
 body {
@@ -56,7 +58,7 @@ body {
   }
 }
 
-header {
+header, .footer_nav{
   display: flex;
   flex-direction: row;
   color: rgb(255, 255, 255);
@@ -69,10 +71,6 @@ header {
     rgba(6, 9, 64, 1) 43%,
     rgba(229, 225, 200, 0.8)
   );
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 header:hover {
@@ -233,7 +231,7 @@ a:hover {
   grid-template-rows: 60px 60px;
   position: -webkit-sticky;
   position: sticky;
-  top: 45px;
+  top: 0px;
   z-index: 1;
 }
 
@@ -251,7 +249,7 @@ a:hover {
   flex-direction: column;
   padding: 20px;
   position: absolute;
-  width: 120px;
+  width: fit-content;
   height: 270px;
   top: 50px;
   right: 220px;
@@ -262,7 +260,7 @@ a:hover {
 .h_item3__li_dropdown_menu li {
   list-style-type: none;
   text-align: left;
-  width: 120px;
+  width: 150px;
 }
 .h_item3__li_dropdown_menu a {
   color: #1d3b24;
@@ -273,10 +271,10 @@ a:hover {
   text-align: left;
   flex-direction: row;
   justify-content: baseline;
-  width: 600px;
+  width: 650px;
   height: 270px;
   top: 0px;
-  left: 121px;
+  left: 150px;
   padding: 5px;
   padding-left: 20px;
   border-left: 2px solid rgba(0, 0, 0, 0.242);
@@ -409,4 +407,31 @@ a:hover {
 }
 h2 > a:hover {
   text-decoration: none;
+}
+
+.footer_nav1{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  align-items: center;
+}
+.footer_nav{
+  width: 100%;
+}
+footer{
+  height: fit-content;
+  background-color: #e5e0ca;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer_article{
+  display: flex;
+  font-size: 20px;
+  width: 50%;
+  color: #1d3b24;
+  justify-content: space-around;
+}.footer_article ul{
+  list-style-type: none;
+  margin-right: 10px;
 }
