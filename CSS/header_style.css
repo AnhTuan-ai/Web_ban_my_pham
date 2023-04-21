@@ -321,12 +321,12 @@ a:hover {
 .product_img {
   position: relative;
   width: 230px;
-  height: 265px;
+  height: 260px;
   border-radius: 20px;
 }
 .product_img > img {
   width: 230px;
-  height: 265px;
+  height: 260px;
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
@@ -365,10 +365,12 @@ a:hover {
 .product_name {
   font-family: "Inter";
   font-style: italic;
-  font-weight: 300;
+  height: 70px;
+  font-weight: 200;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
+  line-height: 20px;
+  text-align: left;
+  letter-spacing: 1px;
   color: #f5eec2;
 }
 .product_brand {
