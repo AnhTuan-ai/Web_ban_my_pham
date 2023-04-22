@@ -30,3 +30,17 @@
   object-fit: cover;
   object-position: 0px -1100px;
 }
+.banner_pd{
+  background: rgba(251, 211, 211, 0.9);
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 10px ;
+}
+.banner_pd img{
+  width: 50%;
+}
