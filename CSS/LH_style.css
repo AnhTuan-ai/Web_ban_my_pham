@@ -1,38 +1,68 @@
-.thesv{
-        display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10px;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Itim&family=Tomorrow:ital,wght@0,300;0,500;1,300;1,400&display=swap");
+.thesv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
 
-width: 700px;
-height: 400px;
+  width: 700px;
+  height: 400px;
 
-background: #FFFFFF;
-border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 30px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.banner_LH,
+.thesv_item {
+  display: flex;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.thesv_item p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+  letter-spacing: 0.09em;
+  text-align: center;
+  height: fit-content;
+  margin: 0 auto;
+}
+#IUH_logo {
+  width: 100px;
+}
+.thesv_infor h2 {
+  font-family: "Tomorrow", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  margin: 0 auto;
+  /* identical to box height */
+        text-align: center;
+  letter-spacing: 0.05em;
 
+  color: #38418e;
 }
-.banner_LH,.thesv_item{
+#avtSV {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+.thesv_infor{
         display: flex;
-        gap: 10px;
-        display: flex;
-        align-items: center;
+        flex-direction: column;
+        gap:10px;
 }
-.thesv_item p{
-        font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 24px;
-color: #384184;
-letter-spacing: 0.09em;
-text-align: center;
-height: fit-content;
-margin: 0 auto;
-}
-#IUH_logo{
-        width: 100px;
+.thesv_infor p{
+font-weight: 150;
+  font-size: 25px;
+  line-height: 40px;
 }
