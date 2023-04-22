@@ -309,7 +309,15 @@ a:hover {
 
 .home_danhmuc{
   width: 25%;
+  height: max-content;
+  height: 730px ;
+  overflow:scroll;
+  border-radius: 15px;
   background: hsla(0, 0%, 0%, 0.6);
+  position: sticky;
+  position:-webkit-sticky;
+  top: 145px;
+
 }
 .danhmuc{
   display: flex;
@@ -461,4 +469,25 @@ footer{
 }.footer_article ul{
   list-style-type: none;
   margin-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #161a42;
+  
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #99e21a  ; 
 }

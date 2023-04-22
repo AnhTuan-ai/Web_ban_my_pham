@@ -5,7 +5,7 @@
 .All_pd {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 80%;
   text-align: center;
   margin: 0px 0px auto;
   justify-content: flex-start;
@@ -13,8 +13,20 @@
 .product_list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: space-between;
 }
 .product_list > .product_tag {
   margin-bottom: 10px;
+  margin-left: 5px;
+}
+.banner_brand {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.banner_brand img {
+  width: 1400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0px -1100px;
 }

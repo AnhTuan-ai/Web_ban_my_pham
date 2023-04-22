@@ -11,4 +11,5 @@
 .brand{ display: flex;
 flex-wrap: wrap;
 justify-content:space-around;
-width: 80%;}
+width: 80%;
+margin-bottom: 150px;}
