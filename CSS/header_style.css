@@ -300,7 +300,7 @@ a:hover {
   display: flex;
 }
 #Container {
-  width: 1400px;
+  width: 1440px;
   /* Auto layout */
   display: flex;
   flex-direction: column;
