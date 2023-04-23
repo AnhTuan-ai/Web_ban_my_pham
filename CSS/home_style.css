@@ -1,14 +1,20 @@
 #myCarousel,
 .carousel-inner {
-  height: 500px;
-  width: 1000px;
+  height: 600px;
+  width: 100%;
+  padding: 0 ;
+}.carousel-inner .item img{
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.MultiCarousel { float: left; overflow: hidden; padding:0px 30px; width: 100%; position:relative; }
-    .MultiCarousel .MultiCarousel-inner {width: 120%;display:flex;transition: 1s ease all;flex-wrap: nowrap;align-content: center;justify-content: flex-start;}
+.MultiCarousel { float: left; padding:0px 30px; width: 100%; position:relative; overflow: hidden;  }
+    .MultiCarousel .MultiCarousel-inner {width: 100%;display:flex;transition: 1s ease all;flex-wrap: nowrap;align-content: center;justify-content: flex-start;  }
         .MultiCarousel .MultiCarousel-inner .item { float: left;width: 250px;margin:10px;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute;font-family: 'Inter';
-      font-weight: 400; border-radius:20%;top:calc(50% - 30px); }
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute;font-family: 'Inter';font-size: 23px;
+      background-color: rgb(250,238,221);
+      font-weight: 800; border-radius:20%;top:calc(50% - 30px); border: 1px solid black;}
     .MultiCarousel .leftLst { left: 0px; }
     .MultiCarousel .rightLst { right:0px; }
     .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; }
@@ -19,8 +25,8 @@
     justify-content: space-evenly;
   }
   .Banner_Sale img{
-width: 650px;
-height: 300px;
+width: 90%;
+height: 400px;
 border-radius: 20px;
 border: solid 5px rgba(0, 0, 0, 0.163);
 box-shadow: 2px 2px 4px black;
@@ -31,8 +37,8 @@ figure.snip1084 {
   overflow: hidden;
   margin: 10px;
   min-width: 220px;
-  width: 650px;
-  height: 300px;  
+  width: 90%;
+  height: 400px;  
   text-align: center;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.86);
@@ -47,8 +53,8 @@ figure.snip1084 * {
 
 figure.snip1084 img {
   opacity: 1;
-  width: 650px;
-  height: 300px;  
+  width: 100%;
+  height: 400px;  
 }
 
 figure.snip1084 a {

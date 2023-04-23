@@ -9,7 +9,8 @@
 }
 
 body {
-  background: linear-gradient(70deg, #0d5e3a, #151b51);
+  background-color: rgb(230,225,202,02)  ;
+  background: linear-gradient(70deg, hsla(153, 76%, 21%, 0.9), rgb(21, 27, 81,0.9));
   background-size: 400% 400%;
   -webkit-animation: AnimationName 20s ease infinite;
   -moz-animation: AnimationName 20s ease infinite;
@@ -300,7 +301,8 @@ a:hover {
   display: flex;
 }
 #Container {
-  width: 1440px;
+  width: 100%;
+  padding: 20px 40px;
   /* Auto layout */
   display: flex;
   flex-direction: column;
