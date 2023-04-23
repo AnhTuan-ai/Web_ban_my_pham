@@ -70,7 +70,7 @@ font-weight: 150;
 .thesv_infor i{
           font-size: 40px;
         }
-#Skin_tutor{
+#Skin_tutor,#Make_tutor{
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -78,7 +78,7 @@ font-weight: 150;
   border-radius: 20%;
   border: 5px solid rgba(0, 0, 0, 0.4);
 }
-#Skin_tutor>p{
+#Skin_tutor>p,#Make_tutor>p{
   font-size: 24px;
   text-align: center;
 }
