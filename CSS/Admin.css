@@ -16,10 +16,11 @@
  .sidebar.active{
    width: 60px;
  }
- .sidebar .logo-details{
+ .sidebar .logo-details a{
    height: 80px;
    display: flex;
    align-items: center;
+   text-decoration: none;
  }
  .sidebar .logo-details i{
    font-size: 28px;
@@ -301,7 +302,7 @@
    text-decoration: none;
    transition: all 0.3s ease;
  }
- .sales-boxes .box .button a:hover{
+ .sales-boxes .box .button a, .active:hover{
    background:  #0d3073;
  }
  
