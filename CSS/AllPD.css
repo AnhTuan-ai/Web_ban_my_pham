@@ -30,7 +30,7 @@
   object-fit: cover;
   object-position: 0px -1100px;
 }
-.banner_pd{
+.banner_pd {
   background: rgba(251, 211, 211, 0.9);
   height: 400px;
   width: 100%;
@@ -38,8 +38,33 @@
   align-items: center;
   font-size: 20px;
   overflow: hidden;
-  padding: 10px ;
+  padding: 10px;
 }
-.banner_pd img{
+.banner_pd img {
   width: 50%;
+}
+.modal-content {
+  width: 1000px;
+  background: linear-gradient(70deg, #04301b, #151b51);
+  background-size: 200% 200%;
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  border-radius: 5%;
+  padding: 10px;
+  box-shadow: 0px 0px 6px  white;
+}
+.modal-content article {
+  height: 400px;
+  font-size: 20px;
+  overflow: scroll;
+  text-align: justify;
+  color: rgb(252, 146, 146);
+}
+.modal-content img {
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+.modal-content h1, .modal-content h2{
+  color: aliceblue;
 }
