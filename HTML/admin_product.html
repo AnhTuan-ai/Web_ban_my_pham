@@ -107,7 +107,7 @@
               <div class="col-12">
                 <ul class="nav d-flex justify-content-between">
                   <li class="nav-item">DANH SÁCH SẢN PHẨM:</li>
-                  <li class="nav-item bg-info"><button type="button" class="btn btn-info"><i class="fa fa-plus"></i>Tạo Sản Phẩm</button></li>
+                  <li class="nav-item bg-info"><button id="taosanpham" type="button" class="btn btn-info"><i class="fa fa-plus"></i>Tạo Sản Phẩm</button></li>
                 </ul>
               </div>
             </div>
@@ -132,6 +132,94 @@
                 </table>
               </div>
             </div>
+            <div class="row">
+              <div class="modal" id="my-modal">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <table>
+                                      <tr>
+                                          <td><label for="">Tên sản phẩm:</label></td>
+                                          <td><input type="text" placeholder="" id="ten"></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><span id="tbten" class="text-danger">*</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td><label for="">Thương hiệu:</label></td>
+                                          <td><input type="text" placeholder="" id="thuonghieu"></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><span id="tbthuonghieu" class="text-danger">*</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td><label for="">loại:</label></td>
+                                          <td><input type="text"  id="loai"></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><span id="tbloai" class="text-danger">*</span></td>
+                                      </tr>
+                                      <tr>
+                                        <td><label for="">loại chi tiết:</label></td>
+                                        <td><input type="text"  id="loaichitiet"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><span id="tbloaichitiet" class="text-danger">*</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><label for="">M-S-K:</label></td>
+                                      <td><input type="text"  id="msk"></td>
+                                  </tr>
+                                  <tr>
+                                      <td></td>
+                                      <td><span id="tbmsk" class="text-danger">*</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><label for="">N-H:</label></td>
+                                    <td><input type="text"  id="nh"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span id="tbnh" class="text-danger">*</span></td>
+                                </tr>
+                                <tr>
+                                  <td><label for="">Mô tả:</label></td>
+                                  <td><input type="text"  id="mota"></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td><span id="tbmota" class="text-danger">*</span></td>
+                              </tr>
+                              <tr>
+                                <td><label for="">Giá Sản Phẩm:</label></td>
+                                <td><input type="text"  id="gia"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span id="tbgia" class="text-danger">*</span></td>
+                            </tr>
+                            <tr>
+                              <td><label for="">Hình:</label></td>
+                              <td><input type="text"  id="hinh"></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td><span id="tbhinh" class="text-danger">*</span></td>
+                          </tr>
+                              </table>
+                          </div>
+                          <div class="modal-footer">
+                              <button class="btn-info" onclick="addUser()">submit</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
           </div>
     </div>
   </section>
