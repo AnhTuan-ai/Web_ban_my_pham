@@ -124,7 +124,6 @@ var arrSP = [
     mota:" Kem BB+ Phấn phủ bột+ Phấn mắt+ Chì kẻ mày+ kẻ mắt+ mascara+ bút tạo khối 2 đầu+ Son kem lì+ Phấn má hồng+ kẹp bấm mi+ Dao tỉa lông mày+ Bộ cọ trang điểm+ Kem che khuyết điểm bộ makeup đầy đủ set"
   }
 ];
-
 function hienSP(arrSP) {
   var list = document.getElementById("list");
   list.innerHTML = "";
@@ -191,7 +190,7 @@ function hienSP(arrSP) {
         `;
   }
   if (arrSP.length == 0) {
-    list.innerHTML += `<h1>Hiện không có sản phẩm theo nhu cầu, tụi mình sẽ cập nhật lại sau!</h1>`;
+    list.innerHTML += `<h1>Hiện không có sản phẩm theo nhu cầu, tụi mình sẽ cập nhật lại sau!</h1>`
   }
 }
 
