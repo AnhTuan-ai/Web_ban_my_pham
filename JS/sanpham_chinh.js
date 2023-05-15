@@ -195,9 +195,9 @@ function hienSP(arrSP) {
 }
 
 hienSP(arrSP);
-document.getElementById("m").addEventListener("click", chonSPmk);
-document.getElementById("s").addEventListener("click", chonSPsk);
-document.getElementById("k").addEventListener("click", chonSPk);
+// document.getElementById("m").addEventListener("click", chonSPmk);
+// document.getElementById("s").addEventListener("click", chonSPsk);
+// document.getElementById("k").addEventListener("click", chonSPk);
 
 function chonSPmk() {
   var newArray = arrSP.filter(function (bien) {
@@ -217,3 +217,6 @@ function chonSPk() {
   });
   hienSP(newArray);
 }
+
+
+

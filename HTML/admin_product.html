@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/Admin.css">
+    <title>product</title>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <a href="../HTML/Home.html">
+        <i></i>
+        <span class="logo_name">COSMETICS</span>
+      </a>
+    </div>
+      <ul class="nav-links" id="my-menu">
+        <li>
+          <a href="../HTML/Admin.html" class="item-menu">
+            <i class="fa fa-dashboard" style="font-size:36px"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-menu active" id="product">
+            <i class="fa fa-product-hunt" style="font-size:36px;"></i>
+            <span class="links_name">Product</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-menu">
+            <i class="fa fa-list-ul" style="font-size:36px;"></i>
+            <span class="links_name">Order list</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-menu">
+            <i class="fa fa-pie-chart" style="font-size:36px"></i>
+            <span class="links_name">Analytics</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-menu">
+            <i class="fa fa-database" style="font-size:36px"></i>
+            <span class="links_name">Stock</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-menu">
+            <i class="fa fa-reorder" style="font-size:36px"></i>
+            <span class="links_name">Total order</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-menu">
+            <i class="fa fa-users" style="font-size:36px"></i>
+            <span class="links_name">Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-menu">
+            <i class="fa fa-commenting" style="font-size:36px"></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-menu">
+            <i class="fa fa-cog" style="font-size:36px;"></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#" class="item-menu">
+            <i class="fa fa-sign-out" style="font-size:36px"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='fa fa-th-list sidebarBtn'></i>
+        <!-- <span class="dashboard">Dashboard</span> -->
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="profile-details">
+        <span class="admin_name">AnhTuan</span>
+        <i class="fa fa-angle-double-down"></i>
+      </div>
+    </nav>
+<!-- đoạn này code phần nội dung -->
+    <div class="home-content" id="home-content">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav d-flex justify-content-between">
+                  <li class="nav-item">DANH SÁCH SẢN PHẨM:</li>
+                  <li class="nav-item bg-info"><button id="taosanpham" type="button" class="btn btn-info"><i class="fa fa-plus"></i>Tạo Sản Phẩm</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row pt-1">
+              <div class="col-12">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Tên Sản Phẩm</th>
+                      <th>Thương Hiệu</th>
+                      <th>Loại</th>
+                      <th>Loại Chi Tiết</th>
+                      <th>M-S-K</th>
+                      <th>N-H</th>
+                      <th>Mô Tả</th>
+                      <th>Giá</th>
+                      <th>Hình</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbData">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="modal" id="my-modal">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <table>
+                                      <tr>
+                                          <td><label for="">Tên sản phẩm:</label></td>
+                                          <td><input type="text" placeholder="" id="ten"></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><span id="tbten" class="text-danger">*</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td><label for="">Thương hiệu:</label></td>
+                                          <td><input type="text" placeholder="" id="thuonghieu"></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><span id="tbthuonghieu" class="text-danger">*</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td><label for="">loại:</label></td>
+                                          <td><input type="text"  id="loai"></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><span id="tbloai" class="text-danger">*</span></td>
+                                      </tr>
+                                      <tr>
+                                        <td><label for="">loại chi tiết:</label></td>
+                                        <td><input type="text"  id="loaichitiet"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><span id="tbloaichitiet" class="text-danger">*</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><label for="">M-S-K:</label></td>
+                                      <td><input type="text"  id="msk"></td>
+                                  </tr>
+                                  <tr>
+                                      <td></td>
+                                      <td><span id="tbmsk" class="text-danger">*</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><label for="">N-H:</label></td>
+                                    <td><input type="text"  id="nh"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span id="tbnh" class="text-danger">*</span></td>
+                                </tr>
+                                <tr>
+                                  <td><label for="">Mô tả:</label></td>
+                                  <td><input type="text"  id="mota"></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                  <td><span id="tbmota" class="text-danger">*</span></td>
+                              </tr>
+                              <tr>
+                                <td><label for="">Giá Sản Phẩm:</label></td>
+                                <td><input type="text"  id="gia"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span id="tbgia" class="text-danger">*</span></td>
+                            </tr>
+                            <tr>
+                              <td><label for="">Hình:</label></td>
+                              <td><input type="text"  id="hinh"></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td><span id="tbhinh" class="text-danger">*</span></td>
+                          </tr>
+                              </table>
+                          </div>
+                          <div class="modal-footer">
+                              <button class="btn-info" onclick="addUser()">submit</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+          </div>
+    </div>
+  </section>
+  <script src="../JS/admin.js"></script>
+  <script src="../JS/product.js"></script>
+</body>
+</html>
