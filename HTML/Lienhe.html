@@ -71,14 +71,48 @@
         </form>
         <div></div>
         <form class="header__form-2" action="">
-          <label for="">Đăng kí</label>
-          <label for=""> Đăng nhập</label>
-          <a href=""
-            ><i
-              class="fas fa-shopping-cart"
-              style="font-size: 24px; color: #02280baf"
-            ></i
-          ></a>
+          <ul class="nav navbar-nav navbar-right" style="list-style-type: none; flex-direction: row; ">
+            <li>
+            <li class="dropdown">
+              <a href="" class="dropdown" data-toggle="dropdown"><i class="fas fa-user"
+                  style="font-size: 26px; color: #02280baf;  filter: drop-shadow(-1px -1px 2px gray);"></i></a>
+              <ul class="dropdown-menu " id="signin_dropdown-menu" style="padding: 15px;min-width: 250px;">
+                <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                          <label class="sr-only" for="user_name">Email address</label>
+                          <input type="email" class="form-control" id="user_name" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group">
+                          <label class="sr-only" for="user_pass">Password</label>
+                          <input type="password" class="form-control" id="user_pass" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox">
+                          <label style="color: white; " class="form-check-label">
+                            <input type="checkbox"> Remember me
+                          </label>
+  
+                        </div>
+                        <div class="form-group">
+                          <input type="button" class="btn btn-success btn-block" id="btn-signin" value="Sign in">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <input class="btn btn-danger btn-block" type="button" id="btn-signup" data-toggle="modal"
+                    data-target="#modalDK" value="Sign up">
+                </li>
+              </ul>
+            </li>
+            <li> <a href=""><i class="fas fa-shopping-cart"
+                  style="font-size: 26px; color: #02280baf;  filter: drop-shadow(-1px -1px 2px gray);"></i></a>
+            </li>
+          </ul>
         </form>
       </div>
       <div class="grid-header item3">
@@ -332,6 +366,60 @@
     <h1>TnCosmetics</h1>
     <p>Hope you feel beautiful today</p>
   </div>
+  <div class="modal fade" id="modalDK" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div id="userform">
+        <h2 class="text-uppercase text-center text-white"> Sign Up for Free</h2>
+        <form id="signup">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group ">
+                <label for="first_name">First Name<span class="req">*</span> </label>
+                <input type="text" class="form-control" id="first_name" required placeholder="Please enter your name."
+                  autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="last_name"> Last Name<span class="req">*</span> </label>
+                <input type="text" class="form-control" id="last_name" required placeholder="Please enter your name."
+                  autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email"> Your Email<span class="req">*</span> </label>
+            <input type="email" class="form-control" id="email" required placeholder="Please enter your email address."
+              autocomplete="off">
+            <p class="help-block text-danger"></p>
+          </div>
+          <div class="form-group">
+            <label> Your Phone<span class="req">*</span> </label>
+            <input type="tel" class="form-control" id="phone" required placeholder="Please enter your phone number."
+              autocomplete="off">
+            <p class="help-block text-danger"></p>
+          </div>
+          <div class="form-group">
+            <label> Password<span class="req">*</span> </label>
+            <input type="password" class="form-control" id="password" required placeholder="Please enter your password"
+              autocomplete="off">
+            <p class="help-block text-danger"></p>
+          </div>
+          <div class="mrgn-30-top">
+            <button type="submit" class="btn btn-larger btn-block" />
+            Sign up
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
 </html>
 <!--
         TODO: POP-up đăng nhập đăng ký có thể làm ở đây 
